@@ -1,0 +1,5 @@
+{
+  "name": "Designer flexivel Chatbot de IA para Planilhas Google",
+  "description": "Uma interface para gerar e configurar um webhook do Google Apps Script, conectando uma Planilha Google à API da OpenAI para criar um chatbot de IA totalmente funcional.",
+  "requestFramePermissions": []
+}
