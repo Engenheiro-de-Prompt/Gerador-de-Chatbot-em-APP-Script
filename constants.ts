@@ -143,9 +143,12 @@ function doPost(e) {
     
     // A API retorna as mensagens mais recentes primeiro
     const assistantMessage = messagesData.data.find(m => m.role === 'assistant');
-    const aiResponse = assistantMessage && assistantMessage.content[0].type === 'text'
+    const rawResponse = assistantMessage && assistantMessage.content[0].type === 'text'
       ? assistantMessage.content[0].text.value
       : "Não foi possível obter uma resposta do assistente.";
+
+    // Remove as citações de arquivo da resposta da IA. Ex: 【4:4†Perguntas Shopify】
+    const aiResponse = rawResponse.replace(/【.*?】/g, '').trim();
 
     logMessage(sessionId, threadId, "assistant", aiResponse);
 

@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useRef } from 'react';
 import CodeBlock from './CodeBlock';
 import DesignCustomizer, { DesignSettings } from './DesignCustomizer';
@@ -105,6 +106,7 @@ const generateEmbedCode = (webhookUrl: string, design: DesignSettings): string =
     font-size: 0.9rem;
     line-height: 1.4;
     word-wrap: break-word;
+    white-space: pre-wrap; /* Adicionado para respeitar as quebras de linha */
   }
   .chatbot-msg.bot .chatbot-msg-text {
     background-color: #e5e7eb;

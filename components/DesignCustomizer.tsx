@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 export interface DesignSettings {
@@ -42,7 +43,7 @@ const DesignCustomizer: React.FC<DesignCustomizerProps> = ({ design, onDesignCha
                             value={design.primaryColor}
                             name="primaryColor"
                             onChange={handleChange}
-                            className="w-full px-3 py-1.5 border border-slate-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition font-mono text-sm"
+                            className="w-full px-3 py-1.5 bg-slate-800 text-slate-50 font-mono text-sm border border-slate-600 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
                          />
                     </div>
                 </div>
@@ -62,7 +63,7 @@ const DesignCustomizer: React.FC<DesignCustomizerProps> = ({ design, onDesignCha
                             value={design.textColor}
                             name="textColor"
                             onChange={handleChange}
-                            className="w-full px-3 py-1.5 border border-slate-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition font-mono text-sm"
+                            className="w-full px-3 py-1.5 bg-slate-800 text-slate-50 font-mono text-sm border border-slate-600 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
                          />
                     </div>
                 </div>
@@ -74,7 +75,7 @@ const DesignCustomizer: React.FC<DesignCustomizerProps> = ({ design, onDesignCha
                         name="headerTitle"
                         value={design.headerTitle}
                         onChange={handleChange}
-                        className="w-full px-4 py-2 border border-slate-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
+                        className="w-full px-4 py-2 bg-slate-800 text-slate-50 border border-slate-600 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
                     />
                 </div>
                 <div>
@@ -85,7 +86,7 @@ const DesignCustomizer: React.FC<DesignCustomizerProps> = ({ design, onDesignCha
                         value={design.initialMessage}
                         onChange={handleChange}
                         rows={3}
-                        className="w-full px-4 py-2 border border-slate-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
+                        className="w-full px-4 py-2 bg-slate-800 text-slate-50 border border-slate-600 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
                     />
                 </div>
                 <div>
